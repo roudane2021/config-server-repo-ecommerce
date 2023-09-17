@@ -1,0 +1,40 @@
+server:
+  port: 8799
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://loca*****:****"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+      routes:
+        - id: commandeModule
+          uri: lb://microservice-commandes
+          predicates:
+            - Path=/commandes/**
+
+        - id: produitModule
+          uri: lb://microservice-produits
+          predicates:
+            - Path=/produits/**
+          filters:
+            - AuthorizationHeaderFilter
+
+        - id: paiements
+          uri: lb://microservice-paiements
+          predicates:
+            - Path=/paiements/**
+
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/

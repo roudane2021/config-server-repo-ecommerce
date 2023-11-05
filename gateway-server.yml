@@ -22,7 +22,7 @@ spring:
         - id: produitModule
           uri: lb://microservice-produits
           predicates:
-            - Path=/v1/produits/**
+            - Path=/produits/**
           filters:
             - AuthorizationHeaderFilter
 

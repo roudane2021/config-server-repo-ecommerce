@@ -12,4 +12,6 @@ spring:
       dialect: org.hibernate.dialect.Oracle12cDialect
       ddl-auto: none
     #liquibase:
+  liquibase:
+    change-log: db/changelog/db.changelog-master.xml
     #change-log: db/changelog/db.changelog-master.xml

@@ -1,5 +1,3 @@
-server:
-  port: 8781
 # Configurations H2
 spring:
   jpa:

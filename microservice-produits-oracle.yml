@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    #url: jdbc:oracle:thin:@oracle_xe:1521/XEPDB1
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: ${APP_USERNAME}
+    password: ${APP_PASSWORD}
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.Oracle12cDialect
+      ddl-auto: update
+    #liquibase:
+    #change-log: db/changelog/db.changelog-master.xml

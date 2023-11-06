@@ -1,12 +1,4 @@
-server:
-  port: 8783
-# Configurations H2
-spring:
-  jpa:
-    show-sql: true
-  h2:
-    console:
-      enabled: true
+
 
 #conf eureka
 eureka:

@@ -1,9 +1,6 @@
 server:
   port: 8761
 spring:
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
   datasource:
     #url: jdbc:oracle:thin:@oracle_xe:1521/XEPDB1
     url: jdbc:oracle:thin:@localhost:1521/XEPDB1

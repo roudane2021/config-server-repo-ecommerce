@@ -13,4 +13,5 @@ spring:
       ddl-auto: none
     #liquibase:
   liquibase:
-    change-log: db/changelog/db.changelog-master.xm
+    change-log: db/changelog/db.changelog-master.xml
+    enable: true

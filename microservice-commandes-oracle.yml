@@ -1,6 +1,8 @@
 server:
   port: 8762
 spring:
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
   datasource:
     #url: jdbc:oracle:thin:@oracle_xe:1521/XEPDB1
     url: jdbc:oracle:thin:@localhost:1521/XEPDB1
@@ -12,6 +14,4 @@ spring:
       dialect: org.hibernate.dialect.Oracle12cDialect
       ddl-auto: none
     #liquibase:
-  liquibase:
-    change-log: classpath:db/changelog/db.changelog-master.xml
     #change-log: db/changelog/db.changelog-master.xml

@@ -10,8 +10,8 @@ spring:
   jpa:
     hibernate:
       dialect: org.hibernate.dialect.Oracle12cDialect
-      ddl-auto: create
+      ddl-auto: none
     #liquibase:
   liquibase:
-    change-log: db/changelog/db.changelog-master.xml
+    change-log: db/changelog/db.changelog-master.xmlsss
     #change-log: db/changelog/db.changelog-master.xml

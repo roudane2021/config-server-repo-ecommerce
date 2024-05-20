@@ -16,3 +16,8 @@ spring:
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
     #change-log: db/changelog/db.changelog-master.xml
+
+params:
+  pagination:
+    sizeDefault: 10
+    pageDefault: 0

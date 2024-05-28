@@ -17,6 +17,16 @@ spring:
     change-log: db/changelog/db.changelog-master.xml
     #change-log: db/changelog/db.changelog-master.xm
 
+feign:
+  client:
+    microservice-produits:
+      name: microservice-produits
+      url: http://localhost:8761
+      endpoint:
+        autorisation-produits: /autorisation-produits
+
+
+
 params:
   pagination:
     sizeDefault: 10

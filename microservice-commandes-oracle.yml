@@ -17,17 +17,14 @@ spring:
     change-log: classpath:db/changelog/db.changelog-master.xml
     #change-log: db/changelog/db.changelog-master.xml
 
-  cloud:
-    openfeign:
-      client:
-        config:
-          microservice-produits:
-            url: http://localhost:8761
-            connectTimeout: 5000
-            readTimeout: 5000
-            loggerLevel: full
 
 
+
+feign:
+  client:
+    microservice-produits:
+      name: microservice-produits
+      url: http://localhost:8761
 
 params:
   pagination:

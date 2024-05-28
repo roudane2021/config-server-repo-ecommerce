@@ -20,6 +20,9 @@ spring:
 
 
 
+client:
+  post:
+    baseUrl: http://localhost:8761
 
 
 

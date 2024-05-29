@@ -1,8 +1,6 @@
-server:
-  port: 8782
-
-
 spring:
+  profiles:
+    active: h2
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver

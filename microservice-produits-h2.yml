@@ -18,3 +18,8 @@ spring:
       enabled: true
   liquibase:
     enabled: false
+
+params:
+  pagination:
+    sizeDefault: 10
+    pageDefault: 0

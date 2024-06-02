@@ -16,3 +16,14 @@ spring:
       enabled: true
   liquibase:
     enabled: false
+
+feign:
+  client:
+    microservice-produits:
+      name: microservice-produits
+      url: http://localhost:8761
+
+params:
+  pagination:
+    sizeDefault: 10
+    pageDefault: 0

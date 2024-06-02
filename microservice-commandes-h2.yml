@@ -25,7 +25,7 @@ feign:
   client:
     microservice-produits:
       name: microservice-produits
-      url: http://localhost:8761
+      url: http://localhost:8781
 
 params:
   pagination:

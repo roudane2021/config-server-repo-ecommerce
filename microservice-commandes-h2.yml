@@ -1,6 +1,16 @@
 server:
   port: 8782
 
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
 
 spring:
   datasource:

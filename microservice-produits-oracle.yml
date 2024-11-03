@@ -2,8 +2,8 @@ server:
   port: 8761
 spring:
   datasource:
-    url: jdbc:oracle:thin:@oracle_xe:1521/XEPDB1
-    #url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    #url: jdbc:oracle:thin:@oracle_xe:1521/XEPDB1
+    url: jdbc:oracle:thin:@${URL_BDD_ORACLE:localhost}:1521/XEPDB1
     username: ${APP_USERNAME}
     password: ${APP_PASSWORD}
     driver-class-name: oracle.jdbc.driver.OracleDriver

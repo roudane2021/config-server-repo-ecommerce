@@ -1,6 +1,10 @@
+server:
+  port: 8782
+
+
+
+
 spring:
-  profiles:
-    active: h2
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
@@ -10,9 +14,24 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   h2:
     console:
       enabled: true
   liquibase:
     enabled: false
+
+
+
+feign:
+  client:
+    microservice-produits:
+      name: microservice-produits
+      url: http://localhost:8781
+
+params:
+  pagination:
+    sizeDefault: 10
+    pageDefault: 0

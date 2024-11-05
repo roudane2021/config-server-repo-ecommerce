@@ -24,6 +24,11 @@ spring:
           predicates:
             - Path=/produits/**
 
+        - id: autorisationProduitModule
+          uri: lb://microservice-produits
+          predicates:
+            - Path=/autorisation-produits/**
+
         - id: paiements
           uri: lb://microservice-paiements
           predicates:

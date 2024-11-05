@@ -3,12 +3,6 @@
 
 #conf eureka
 eureka:
-  instance:
-    hostname: ${HOSTNAME}      # Le nom d'hôte défini par Docker
-    prefer-ip-address: true    # Utiliser l'adresse IP au lieu de localhost
-    ip-address: ${DOCKER_IP}   # L'adresse IP configurée dans Docker
   client:
-    registerWithEureka: true
-    fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_SERVER_URL:http://localhost:8802/eureka/}

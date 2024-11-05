@@ -23,8 +23,6 @@ spring:
           uri: lb://microservice-produits
           predicates:
             - Path=/produits/**
-          filters:
-            - AuthorizationHeaderFilter
 
         - id: paiements
           uri: lb://microservice-paiements

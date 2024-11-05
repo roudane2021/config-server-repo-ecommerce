@@ -3,10 +3,10 @@ server:
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false  # Indique que ce serveur ne s'enregistre pas auprès d'un autre Eureka
+    fetch-registry: false        # Indique qu'il ne cherche pas à obtenir le registre d'un autre Eureka
   server:
-    enable-self-preservation: false
+    enable-self-preservation: false  # Facultatif, pour désactiver la préservation automatique si nécessaire
 spring:
   cloud:
     config:

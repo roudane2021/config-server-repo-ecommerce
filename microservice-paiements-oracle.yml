@@ -14,3 +14,7 @@ spring:
   liquibase:
     change-log: db/changelog/db.changelog-master.xml
     #change-log: db/changelog/db.changelog-master.xml
+
+topic:
+  name: roudane-topic
+  group: roudane

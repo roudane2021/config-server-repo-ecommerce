@@ -1,6 +1,10 @@
 server:
   port: 8763
 spring:
+  json:
+    use:
+      type:
+        headers: false
   datasource:
     url: jdbc:oracle:thin:@${URL_BDD_ORACLE:localhost}/XEPDB1
     username: ${APP_USERNAME}

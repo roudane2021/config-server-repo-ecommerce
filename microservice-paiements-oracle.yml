@@ -18,3 +18,4 @@ spring:
 topic:
   name: roudane-topic
   group: roudane
+  servers: kafka1:9092,kafka2:9093
